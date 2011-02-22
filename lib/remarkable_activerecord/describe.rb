@@ -125,7 +125,7 @@ module Remarkable
               end
 
               pieces << Remarkable.t("remarkable.active_record.describe.each",
-                                      :default => "{{key}} is {{value}}",
+                                      :default => "%{key} is %{value}",
                                       :key => translated_key.downcase, :value => value.inspect)
             end
 
